@@ -1,0 +1,20 @@
+/*
+
+Buttons
+=======
+
+Creates a button for a button.
+
+    <div class="btn">Lol</div>
+    <div class="btn--big">So big</div>
+*/
+
+.btn {
+    font-size: 15px;
+    background-color: blue;
+}
+
+    .btn--big {
+        font-size: 50px;
+        background-color: red
+    }
