@@ -1,1 +1,20 @@
-__buttons--color.scss
+/*
+
+Buttons--color
+=======
+
+Color modifier for buttons.
+
+    <div class="btn--red">Lol</div>
+*/
+
+
+.btn--red {
+    background-color: red;
+    color: white;
+}
+
+.btn--blue {
+    background-color: blue;
+    color: white;
+}

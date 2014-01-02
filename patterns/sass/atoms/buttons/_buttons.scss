@@ -4,17 +4,12 @@ Buttons
 =======
 
 Creates a button for a button.
-
     <div class="btn">Lol</div>
-    <div class="btn--big">So big</div>
 */
 
 .btn {
-    font-size: 15px;
-    background-color: blue;
+    font-size: 16px;
+    background-color: #ccc;
+    padding: 10px;
+    border-radius: 5px;
 }
-
-    .btn--big {
-        font-size: 50px;
-        background-color: red
-    }
