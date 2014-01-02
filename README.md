@@ -1,2 +1,2 @@
-tools-pattern_library
+Pattern library
 =====================
