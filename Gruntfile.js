@@ -7,25 +7,18 @@ module.exports = function(grunt) {
     grunt.initConfig ({
         pkg: grunt.file.readJSON('package.json'),
 
-        // Before generating any new files, remove any previously-created files.
-        clean: {
-            test: [
-                'tmp',
-                'tmp2',
-                'tmp3',
-                'tmp4',
-                'tmp5',
-                '.sass-cache'
-            ],
-            example: ['styleguide/', 'patterns/sass/readme.md']
-        },
+
+
+
+    /* ==========================================================================
+       Compass: CSS authoring framework
+       ========================================================================== */
 
         compass: {
             compile: {
                 options: {
                     sassDir: 'patterns/sass',
-                    cssDir: 'patterns/css',
-                    specify: 'patterns/sass/'
+                    cssDir: 'patterns/css'
                 }
             },
             compileWithConfigFile: {
@@ -33,15 +26,15 @@ module.exports = function(grunt) {
                     config: 'config.rb'
                 }
             },
-            clean: {
-                option: {
-                    clean: true
-                }
-            },
             options: {
                 outputStyle: 'compressed'
             }
         },
+
+
+     /* ==========================================================================
+        Sassdown: automatically generate styleguide from CSS comments
+        ========================================================================== */
 
         sassdown: {
             options: {
@@ -59,22 +52,27 @@ module.exports = function(grunt) {
                 ],
                 dest: 'styleguide/'
             }
-        }
-    });
+        },
 
-    grunt.registerTask('compass', [
-        'clean',
-        'mkdir:tmp',
-        'mkdir:tmp2',
-        'mkdir:tmp3',
-        'compass',
-        'clean'
-    ]);
+    /* ==========================================================================
+        Watch: build files on save
+        ========================================================================== */
+
+        watch: {
+            css: {
+                files: '**/*.scss',
+                tasks: ['compass']
+            }
+        }
+
+    }); // grunt.initConfig
+
 
 
     grunt.loadNpmTasks('sassdown');
     grunt.loadNpmTasks('grunt-contrib-compass');
-    grunt.loadNpmTasks('grunt-contrib-clean');
+    // grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['clean', 'compass', 'sassdown']);
+    grunt.registerTask('default', ['compass', 'sassdown', 'watch']);
 };
