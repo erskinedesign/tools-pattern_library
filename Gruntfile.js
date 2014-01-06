@@ -17,8 +17,8 @@ module.exports = function(grunt) {
         compass: {
             compile: {
                 options: {
-                    sassDir: 'patterns/sass',
-                    cssDir: 'patterns/css'
+                    sassDir: 'assets/sass',
+                    cssDir: 'assets/css'
                 }
             },
             compileWithConfigFile: {
@@ -39,18 +39,18 @@ module.exports = function(grunt) {
         sassdown: {
             options: {
                 assets: [
-                'patterns/css/*.css'
+                'assets/css/*.css'
                 ],
                 // Task specific options go here.
             },
 
             files: {
                 expand: true,
-                cwd: 'patterns/sass',
+                cwd: 'assets/sass',
                 src: [
                     '**/**/*.{scss,sass}'
                 ],
-                dest: 'styleguide/'
+                dest: 'patterns/'
             }
         },
 
