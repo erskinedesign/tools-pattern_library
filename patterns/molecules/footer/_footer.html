@@ -10,15 +10,15 @@
             display: none;
         }
 
-        .modifiers ul[class*="index"] { display: block}
+        .modifiers ul[class*="_footer"] { display: block}
 
     </style>
 </head>
-<body class="index">
+<body class="_footer">
 
     <div class="navigation">
         <div class="gutter">
-            <div class="group is-active">
+            <div class="group ">
                 <a href="/patterns/">Home</a>
             </div>
             
@@ -41,12 +41,12 @@
                 </ul>
             </div>
             
-            <div class="group ">
+            <div class="group is-active">
                 <span>molecules</span>
                 <ul>
                     
                         <li>
-                            <a class="" href="/patterns/molecules/footer/_footer.html">Footer</a>
+                            <a class="is-active" href="/patterns/molecules/footer/_footer.html">Footer</a>
                         </li>
                     
                         <li>
@@ -74,12 +74,37 @@
         
             <div class="section">
                 
-                    <div class="comment"><h1 id="styleguide">Styleguide</h1>
-<p>Fill me with your delicious readme content</p>
+                    <div class="comment"><h1 id="footer">Footer</h1>
+<p>Creates a button for a button.</p>
 </div>
                 
 
                 
+                    <div class="result">
+                        <iframe id="iframe_m4xxy" height="0" src="about:blank"></iframe>
+                        <script id="script_m4xxy">
+                            var iframe  = document.getElementById('iframe_m4xxy');
+                            var context = iframe.contentWindow.document;
+                            var script  = document.getElementById('script_m4xxy');
+                            context.open();
+                            context.write('<!doctype html>'
+                                +'<html>'
+                                +'    <head>'
+                                +'        <link rel="stylesheet" href="/assets/css/screen.css" />'
+                                +'    </head>'
+                                +'    <body>'
+                                +'        <div class="btn">Lol</div>'
+                                +'        '
+                                +'    </body>'
+                                +'</html>');
+                            context.close();
+                            script.parentNode.removeChild(script);
+                        </script>
+                    </div>
+                
+                
+                    <div class="source language-markup"><pre><code>&lt;div class=&quot;btn&quot;&gt;Lol&lt;/div&gt;</code></pre>
+</div>
                 
             </div>
         

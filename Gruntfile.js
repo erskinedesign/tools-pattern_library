@@ -58,12 +58,12 @@ module.exports = function(grunt) {
         Watch: build files on save
         ========================================================================== */
 
-        watch: {
-            css: {
-                files: '**/*.scss',
-                tasks: ['compass']
-            }
-        }
+        // watch: {
+        //     css: {
+        //         files: '**/*.scss',
+        //         tasks: ['compass']
+        //     }
+        // }
 
     }); // grunt.initConfig
 
@@ -72,7 +72,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('sassdown');
     grunt.loadNpmTasks('grunt-contrib-compass');
     // grunt.loadNpmTasks('grunt-contrib-clean');
-    grunt.loadNpmTasks('grunt-contrib-watch');
+    // grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['compass', 'sassdown', 'watch']);
+    grunt.registerTask('default', ['compass', 'sassdown']);
 };
