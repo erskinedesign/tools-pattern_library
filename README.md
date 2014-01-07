@@ -1,6 +1,5 @@
 # Pattern library
 
-
 ### Requirements
 - Navigation is built up from directories (atoms, molecules etc.)
 - Comments from Sass components are built into flat markup so that developers do not have to spend a lot of time developing a separate project.
