@@ -1,13 +1,15 @@
 # Pattern library
 
 ### Requirements
-- Navigation is built up from directories (atoms, molecules etc.)
-- Comments from Sass components are built into flat markup so that developers do not have to spend a lot of time developing a separate project.
-- Emphasis on components rather than frameworks.
-- View source link to repo on Github: components will be downloaded via Bower.
+- Modifiers of components are listed from each components modifier directory.
+- Comments from Sass components builds flat markup examples.
+- Links to the module’s public repo on Github.
+- Each module lists browser support with suitable documentation outlining decisions.
+
+
+#### Potential features
 - Works without JS because we ought to test modules before we place them into the website.
-- Load Javascript dependencies from comments in CSS.
-- Components list the browser support with comments about reasoning.
+- Loads Javascript dependencies from comments in CSS.
 
 ### Design
 ![Mockup #1](http://cl.ly/image/1m3v2V371U2Z/patterns.jpg)
