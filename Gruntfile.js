@@ -15,7 +15,7 @@ module.exports = function(grunt){
         dss: {
             docs: {
                 files: {
-                  'patterns/': 'assets/**/*.{css,scss,sass,less,styl}'
+                  'patterns/': 'assets/**/*.{css,scss,styl}'
                 }
             }
         }
