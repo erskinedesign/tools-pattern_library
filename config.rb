@@ -1,6 +1,6 @@
 http_path = "/"
-css_dir = "patterns/assets/css"
-sass_dir = "assets"
+css_dir = "patterns/"
+sass_dir = "patterns/"
 images_dir = "images"
 javascripts_dir = "scripts"
 
